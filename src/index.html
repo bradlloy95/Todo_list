@@ -6,7 +6,33 @@
   <title>My Webpack Project</title>
 </head>
 <body>
-  <h1>Hello, Webpack!</h1>
-  <img src="./images/img.png" alt="My Image">
+    <header>
+        <h1>To-Do</h1>
+    </header>
+    <div id="main-content">
+        <nav>
+            <button>Home</button>
+            <button>Task</button>
+            <button id="new-task-btn">New Tasks</button>
+        </nav>
+
+        <main id="content">
+
+        </main>
+    </div>
+    <div id="popUpForm" class="modal">
+        <div class="modal-content">
+            <span id="closeFormButton" class="close">&times;</span>
+            <form id="todoForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required><br><br>
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate" ><br><br>
+                
+                <input type="submit" value="Submit">
+        </div>
+    </div>
 </body>
 </html>
