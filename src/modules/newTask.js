@@ -9,6 +9,12 @@ export class ToDo {
         this.dayMade = new Date().toLocaleDateString(); // Stores the current date
         this.description = description;
         this.dueDate = dueDate;
+        this.isComplete = false;
+    }
+
+    toggleComplete() {
+        console.log('Checked');
+        this.isComplete = !this.isComplete; // Toggles the boolean value
     }
 }
 
@@ -22,10 +28,7 @@ document.getElementById('todoForm').addEventListener('submit', function(event) {
     let description = document.getElementById('description').value;
     let dueDate = document.getElementById('dueDate').value;
 
-    // Display the form data in the console (or process it as needed)
-    console.log('Name:', name);
-    console.log('Description:', description);
-    console.log('Due Date:', dueDate);
+    
 
     // Example: Save the form data to localStorage
     let todo = new ToDo(name, description, dueDate);
