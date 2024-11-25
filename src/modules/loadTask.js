@@ -86,6 +86,7 @@ function todoDiv(forHead, todo = null) {
       }
 
       addToDoToLocalStorage(item);
+      renderToDos()
     });
     nameCTR.innerText = todo.name;
 
