@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpack Project</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <header>
+        <h1>To-Do</h1>
+    </header>
+    <div id="main-content">
+        <nav>
+            <button id="homeBTN">Home</button>
+            <button>Task</button>
+            <button id="new-task-btn">New Tasks</button>
+        </nav>
+
+        <main id="content">
+            <h2>My Tasks</h2>
+
+        </main>
+    </div>
+    <div id="popUpForm" class="modal">
+        <div class="modal-content">
+            <span id="closeFormButton" class="close">&times;</span>
+            <form id="todoForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required><br><br>
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" name="dueDate" ><br><br>
+
+                <!-- <input type="checkbox" id="circleCheckbox" class="circle-checkbox">
+                <label for="circleCheckbox"></label>
+                 -->
+                <input type="submit" value="Submit">
+        </div>
+    </div>
+    <div id="todoPopup" class="modal">
+        <div id="todoModalContent" class="modal-content">
+            <span id="todo-closeFormButton" class="close">&times;</span>
+            <h2 id="todoModelName">name</h2>
+            <p id="todoModelDesc">description</p>
+            <h6 id="todoModelDueDate">duedate</h6>
+            <h6 id="todoIsComplete">status</h6>
+            <button id="todoDelete">Delete</button>
+        </div>
+    </div>
+</body>
+</html>
